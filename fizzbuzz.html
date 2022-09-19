@@ -8,7 +8,7 @@
         content="width=device-width, initial-scale=1">
   <link rel="stylesheet"
         href=
-          "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+updat                "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -45,15 +45,15 @@
     const createModel = () => {
       model = tf.sequential();
       model.add(
-        tf.layers.dense({ inputShape: NUM_DIGITS, activation: "relu", units: NUM_HIDDEN }),
+              tf.layers.dense({ inputShape: NUM_DIGITS, activation: "relu", units: NUM_HIDDEN }),
       );
 
       model.add(
-        tf.layers.dense({
-          inputShape: NUM_HIDDEN,
-          units: NUM_CLASSES,
-          activation: "softmax",
-        }),
+              tf.layers.dense({
+                inputShape: NUM_HIDDEN,
+                units: NUM_CLASSES,
+                activation: "softmax",
+              }),
       );
 
       model.compile({
@@ -123,7 +123,7 @@
     const displayPrediction = (predictions, inputValues) => {
       let predictionDiv = document.getElementsByClassName("prediction")[0];
       let predictionSection = document.getElementsByClassName(
-        "prediction-block",
+              "prediction-block",
       )[0];
       let allPredictions = "";
       predictions = predictions.arraySync();
