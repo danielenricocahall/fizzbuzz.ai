@@ -109,7 +109,7 @@ updat                "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootst
     };
     const predict = async inputData => {
       inputData = parseInt(inputData);
-      let allNumbers1ToN = [...Array(inputData + 1).keys()]
+      let allNumbers1ToN = [...Array.from({length: inputData}, (_, i) => i + 1).keys()]
 
       let newDataTensor = tf.tensor2d(allNumbers1ToN.map(binary_encode));
 
