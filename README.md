@@ -15,9 +15,9 @@ The model is trained on 10-bit binary encoded representations of each number, an
 
 The approach was inspired by [this fantastic article](https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/) by Joel Grus.
 
-The model is a simple dense network - single hidden layer with 100 units, all using ReLU.
+The model is a simple dense network - single hidden layer with 100 units, all using ReLU activation and the output layer uses a softmax activation.
 # Improvements / TODO 
 - Let the user specify the number of epochs to train the model?
    - This would also mean controlling when training starts/stops (maybe with a button)
 - Write as a 3 class problem which permits multiple labels rather than having "FizzBuzz" be a separate class?
-
+- Include confidence scores per prediction?
