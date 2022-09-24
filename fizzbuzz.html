@@ -85,7 +85,7 @@ updat                "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootst
       return ret;
     };
 
-    let numbers = [...Array.from({length: 2 ** NUM_DIGITS + 1}, (_, i) => i + 1).keys()]
+    let numbers = [...Array.from({length: 2 ** NUM_DIGITS}, (_, i) => i + 1).keys()]
     let trainingData = numbers.map(binary_encode);
     let outputData = numbers.map(fizz_buzz_encode);
 
