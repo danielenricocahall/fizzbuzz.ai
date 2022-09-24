@@ -121,16 +121,16 @@ updat                "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootst
       return document.getElementsByName("fizz-buzz-num")[0].value;
     };
     const displayPrediction = (predictions, inputValues) => {
-      let predictionDiv = document.getElementsByClassName("prediction")[0];
-      let predictionSection = document.getElementsByClassName(
+      const predictionDiv = document.getElementsByClassName("prediction")[0];
+      const predictionSection = document.getElementsByClassName(
               "prediction-block",
       )[0];
       let allPredictions = "";
       predictions = predictions.arraySync();
       for (let i = 1; i < predictions.length; i++) {
-        let prediction = predictions[i];
-        let maxProbability = Math.max(...prediction);
-        let predictionIndex = prediction.indexOf(maxProbability);
+        const prediction = predictions[i];
+        const maxProbability = Math.max(...prediction);
+        const predictionIndex = prediction.indexOf(maxProbability);
         let fizzBuzzPrediction;
 
         switch (predictionIndex) {
