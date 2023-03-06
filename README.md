@@ -1,6 +1,6 @@
 # Overview
 
-This is the source code for the site [fizzbuzz.ai](fizzbuzz.ai). It uses [Tensorflow JS](https://www.tensorflow.org/js) to train a simple model in the browser on the [Fizz Buzz problem](https://en.wikipedia.org/wiki/Fizz_buzz) when the user navigates to the page. When the model is finished training, the user can then enter a number  `N` (currently limited to 1024) and retrieve the model's fizzbuzz predictions on all numbers from `0:N`.
+This is the source code for the site [fizzbuzz.ai](http://www.fizzbuzz.ai). It uses [Tensorflow JS](https://www.tensorflow.org/js) to train a simple model in the browser on the [Fizz Buzz problem](https://en.wikipedia.org/wiki/Fizz_buzz) when the user navigates to the page. When the model is finished training, the user can then enter a number  `N` (currently limited to 1024) and retrieve the model's fizzbuzz predictions on all numbers from `0:N`.
 
 # Approach
 
